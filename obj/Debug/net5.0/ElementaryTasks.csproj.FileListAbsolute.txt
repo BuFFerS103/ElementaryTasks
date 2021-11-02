@@ -1,0 +1,16 @@
+O:\Programming\Projects\ElementaryTasks\ElementaryTasks\bin\Debug\net5.0\ElementaryTasks.exe
+O:\Programming\Projects\ElementaryTasks\ElementaryTasks\bin\Debug\net5.0\ElementaryTasks.deps.json
+O:\Programming\Projects\ElementaryTasks\ElementaryTasks\bin\Debug\net5.0\ElementaryTasks.runtimeconfig.json
+O:\Programming\Projects\ElementaryTasks\ElementaryTasks\bin\Debug\net5.0\ElementaryTasks.runtimeconfig.dev.json
+O:\Programming\Projects\ElementaryTasks\ElementaryTasks\bin\Debug\net5.0\ElementaryTasks.dll
+O:\Programming\Projects\ElementaryTasks\ElementaryTasks\bin\Debug\net5.0\ref\ElementaryTasks.dll
+O:\Programming\Projects\ElementaryTasks\ElementaryTasks\bin\Debug\net5.0\ElementaryTasks.pdb
+O:\Programming\Projects\ElementaryTasks\ElementaryTasks\obj\Debug\net5.0\ElementaryTasks.csproj.AssemblyReference.cache
+O:\Programming\Projects\ElementaryTasks\ElementaryTasks\obj\Debug\net5.0\ElementaryTasks.GeneratedMSBuildEditorConfig.editorconfig
+O:\Programming\Projects\ElementaryTasks\ElementaryTasks\obj\Debug\net5.0\ElementaryTasks.AssemblyInfoInputs.cache
+O:\Programming\Projects\ElementaryTasks\ElementaryTasks\obj\Debug\net5.0\ElementaryTasks.AssemblyInfo.cs
+O:\Programming\Projects\ElementaryTasks\ElementaryTasks\obj\Debug\net5.0\ElementaryTasks.csproj.CoreCompileInputs.cache
+O:\Programming\Projects\ElementaryTasks\ElementaryTasks\obj\Debug\net5.0\ElementaryTasks.dll
+O:\Programming\Projects\ElementaryTasks\ElementaryTasks\obj\Debug\net5.0\ref\ElementaryTasks.dll
+O:\Programming\Projects\ElementaryTasks\ElementaryTasks\obj\Debug\net5.0\ElementaryTasks.pdb
+O:\Programming\Projects\ElementaryTasks\ElementaryTasks\obj\Debug\net5.0\ElementaryTasks.genruntimeconfig.cache
