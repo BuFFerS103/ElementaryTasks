@@ -5,41 +5,43 @@ namespace Task8
 {
     class Program
     {
-        static List<uint> numbers = new List<uint>() { };  ///false
+        static List<uint> numbers = new List<uint>() { };  
         static string ExMes = "You have to enter a number! \nTry again..\n";
+        static string Greetings = "This program reproduces the fibonacci sequence according to the entered parameters\n";
+        static string Result = "Result:";
 
-        static int RangeFirst()
+        static uint RangeFirst()
         {
-            int num;
+            uint num;
             while (true)
             {
-                Console.WriteLine("");
-                if (Int32.TryParse(Console.ReadLine(), out num)) return num;
+                Console.WriteLine("Specify a range of numbers [e.g. 1, 100]\nEnter the first number of range:");
+                if (UInt32.TryParse(Console.ReadLine(), out num)) return num;
                 else Console.WriteLine(ExMes);
             }
         }
-        static int RangeLast()
+        static uint RangeLast()
         {
-            int num;
+            uint num;
             while (true)
             {
-                Console.WriteLine("");
-                if (Int32.TryParse(Console.ReadLine(), out num)) return num;
+                Console.WriteLine("Enter the last number of range");
+                if (UInt32.TryParse(Console.ReadLine(), out num)) return num;
                 else Console.WriteLine(ExMes);
             }
         }
-        static int Length()
+        static uint Length()
         {
-            int num;
+            uint num;
             while (true)
             {
-                Console.WriteLine("");
-                if (Int32.TryParse(Console.ReadLine(), out num)) return num;
+                Console.WriteLine("\nEnter the lenght of numbers [e.g. 3 = 144, 233, 377 etc.]");
+                if (UInt32.TryParse(Console.ReadLine(), out num)) return num;
                 else Console.WriteLine(ExMes);
             }
         }
 
-        static void BuildData()
+        static void Render()
         {
             uint result = 0;
             uint curr = 1;
@@ -77,14 +79,17 @@ namespace Task8
 
         static void Main(string[] args)
         {
-            uint a = 20;
-            uint b = 100;
-            uint c = 3;
-           
-            BuildData();
-            RangeRender(a, b);
-            Console.WriteLine("***");
-            LengthRender(c);
+            Console.WriteLine(Greetings);
+
+            uint rangeFirst = RangeFirst();
+            uint rangeLast = RangeLast();
+            uint lenght = Length();
+
+            Console.WriteLine($"\n{Result}\n");
+            Render();
+            RangeRender(rangeFirst, rangeLast);
+            Console.WriteLine("\n***");
+            LengthRender(lenght);
         }
     }
 }
