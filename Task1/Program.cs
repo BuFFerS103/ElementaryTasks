@@ -4,6 +4,10 @@ namespace Chess
 {
     class Program
     {
+        static string ExMes = "You have to enter a number! \nTry again..\n";
+        static string MenuMes = "\nPress any key to continue or [Esc] to exit.";
+        static string Greetings = "This program renders a chess board according to the entered parameters\n";
+
         static int AxisX()
         {
             int num;
@@ -39,9 +43,6 @@ namespace Chess
                 Console.WriteLine();
             }
         }
-        static string ExMes = "You have to enter a number! \nTry again..\n";
-        static string MenuMes = "\nPress any key to continue or [Esc] to exit.";
-        static string Greetings = "This program renders a chess board according to the entered parameters\n";
 
         static void Main(string[] args)
         {
