@@ -7,6 +7,7 @@ namespace Task8_2
         static string ExMes = "You have to enter a number! \nTry again..\n";
         static string Greetings = "This program reproduces the fibonacci sequence according to the entered parameters\n";
         static string Result = "Result:";
+        static string MenuMes = "\nPress any key to continue or [Esc] to exit.";
 
         static uint RangeFirst()
         {
@@ -72,14 +73,22 @@ namespace Task8_2
 
         static void Main(string[] args)
         {
-            Console.WriteLine(Greetings);
+            while (true)
+            {
+                Console.WriteLine(Greetings);
 
-            uint rangeFirst = RangeFirst();
-            uint rangeLast = RangeLast();
-            uint lenght = Length();
+                uint rangeFirst = RangeFirst();
+                uint rangeLast = RangeLast();
+                uint lenght = Length();
 
-            Console.WriteLine($"\n{Result}\n");
-            Render(rangeFirst, rangeLast, lenght);
+                Console.WriteLine($"\n{Result}\n");
+                Render(rangeFirst, rangeLast, lenght);
+
+                Console.WriteLine(MenuMes);
+                ConsoleKeyInfo keyInfo = Console.ReadKey();
+                if (keyInfo.Key == ConsoleKey.Escape) return;
+                Console.Clear();
+            }
         }
     }
 }
