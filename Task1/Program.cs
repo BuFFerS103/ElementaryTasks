@@ -8,34 +8,32 @@ namespace Chess
         static string MenuMes = "\nPress any key to continue or [Esc] to exit.";
         static string Greetings = "This program renders a chess board according to the entered parameters\n";
 
-        static int AxisX()
+        static uint AxisX()
         {
-            int num;
             while (true)
             {
                 Console.WriteLine("Enter the number of rows [X axis]:");
-                if (Int32.TryParse(Console.ReadLine(), out num)) return num;
+                if (UInt32.TryParse(Console.ReadLine(), out uint num)) return num;
                 else Console.WriteLine(ExMes);
             }
         }
-        static int AxisY()
+        static uint AxisY()
         {
-            int num;
             while (true)
             {
                 Console.WriteLine("Enter the number of columns [Y axis]:");
-                if (Int32.TryParse(Console.ReadLine(), out num)) return num;
+                if (UInt32.TryParse(Console.ReadLine(), out uint num)) return num;
                 else Console.WriteLine(ExMes);
             }
         }
-        static void Render(int x, int y)
+        static void Render(uint x, uint y)
         {
             char idle = ' ';
             char filled = '#';
             Console.WriteLine();
-            for (int i = 0; i < y; i++)
+            for (uint i = 0; i < y; i++)
             {
-                for (int j = 1; j < x; j++)
+                for (uint j = 1; j < x; j++)
                 {
                     if ((i+j)%2 == 0) Console.Write(idle);
                     else Console.Write(filled);
@@ -49,8 +47,8 @@ namespace Chess
             Console.WriteLine(Greetings);
             while (true)
             {
-                int x = AxisX();
-                int y = AxisY();
+                uint x = AxisX();
+                uint y = AxisY();
                 Render(x, y); 
                 Console.WriteLine(MenuMes);
                 ConsoleKeyInfo keyInfo = Console.ReadKey();
