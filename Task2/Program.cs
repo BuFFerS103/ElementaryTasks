@@ -4,13 +4,13 @@ namespace Task2
 {
     class Program
     {
-        static string ExMes = "You have to enter a number! \nTry again..\n";
-        static string MenuMes = "\nPress [Y] to continue or any key to exit.";
-        static string Greetings = "This program calculates the condition of the [Task 2] using the entered floating point parameters";
-        static string Condition1 = "\nEnter two floating point numbers of the 1st rectangle [basic] (e.g. 4,2)";
-        static string Condition2 = "\nEnter two floating point numbers of the 2nd rectangle [you want to fit] (e.g. 4,2)";
-        static string Success = "\nSuccess :)";
-        static string Fail = "\nFail :(";
+        readonly static string ExMes = "You have to enter a number! \nTry again..\n";
+        readonly static string MenuMes = "\nPress [Y] to continue or any key to exit.";
+        readonly static string Greetings = "This program calculates the condition of the [Task 2] using the entered floating point parameters";
+        readonly static string Condition1 = "\nEnter two floating point numbers of the 1st rectangle [basic]";
+        readonly static string Condition2 = "\nEnter two floating point numbers of the 2nd rectangle [you want to fit]";
+        readonly static string Success = "\nSuccess :)";
+        readonly static string Fail = "\nFail :(";
 
         static double AxisX()
         {

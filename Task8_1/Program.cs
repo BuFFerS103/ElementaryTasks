@@ -57,11 +57,11 @@ namespace Task8
             }
         }
 
-        static void LengthRender(uint lenght)
+        static void LengthRender(uint length)
         {
             foreach (uint item in numbers)
             {
-                if (item.ToString().Length == lenght)
+                if (item.ToString().Length == length)
                 {
                     Console.WriteLine(item);
                 }

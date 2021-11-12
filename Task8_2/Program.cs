@@ -42,29 +42,29 @@ namespace Task8_2
 
         static void Render(uint minVal, uint maxVal, uint lenght)
         {
-            uint currentVal = 1;
-            uint prevVal = 0;
-            uint tempVal;
+            uint currentValue = 1;
+            uint prevVauel = 0;
+            uint tempValue;
 
             while (true)
             {
-                tempVal = prevVal;
-                prevVal = currentVal;
-                currentVal += tempVal;
+                tempValue = prevVauel;
+                prevVauel = currentValue;
+                currentValue += tempValue;
 
-                if (currentVal >= minVal && currentVal <= maxVal)
+                if (currentValue >= minVal && currentValue <= maxVal)
                 {
-                    Console.WriteLine(currentVal);
+                    Console.WriteLine(currentValue);
                     continue;
                 }
                 
-                if (currentVal.ToString().Length == lenght)
+                if (currentValue.ToString().Length == lenght)
                 {
-                    Console.WriteLine(currentVal);
+                    Console.WriteLine(currentValue);
                     continue;
                 }
                 
-                if (currentVal > maxVal && currentVal.ToString().Length > lenght)
+                if (currentValue > maxVal && currentValue.ToString().Length > lenght)
                 {
                     break;
                 }
