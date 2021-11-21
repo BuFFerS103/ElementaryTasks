@@ -10,18 +10,15 @@ namespace Task8_3
     {
         public static List<int> BuildSequenceWithBounds(List<int> fibonacciNumbers, int maxValue)
         {
-            var current = 0;
-
-            while (current < maxValue)
+            int current = 0;
+            for (int i = current; i < maxValue; i++)
             {
                 int previous = fibonacciNumbers[fibonacciNumbers.Count - 1];
                 int previous2 = fibonacciNumbers[fibonacciNumbers.Count - 2];
                 current = previous + previous2;
 
-                fibonacciNumbers.Add(current);          //if???   for???
+                fibonacciNumbers.Add(current);
             }
-            fibonacciNumbers.RemoveAt(fibonacciNumbers.Count - 1);
-
             return fibonacciNumbers;
         }
     }

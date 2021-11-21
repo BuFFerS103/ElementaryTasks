@@ -7,13 +7,8 @@ namespace Task8_3
     {
         static void Main(string[] args)
         {
-            int minValue = 2;
-            int maxValue = 100;
-            var fibonacciNumbers = new List<int> { 1, 1 };
-            fibonacciNumbers = Builder.BuildSequenceWithBounds(fibonacciNumbers, maxValue);
-            Display.DisplaySequenceWithBounds(fibonacciNumbers, minValue, maxValue);
+            Runner.Run();
 
-            //TODO build with lenght
         }
     }
 }
