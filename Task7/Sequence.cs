@@ -17,9 +17,11 @@ namespace Task7
             _lenght = lenght;
             _minSquare = minSquare;
             _values = new uint[_lenght];
+        }
 
-            uint minValue = (uint)Math.Ceiling(Math.Sqrt(_minSquare));
-
+        public void BuildSequence()
+        {
+            uint minValue = (uint)Math.Ceiling(Math.Sqrt(_minSquare));   
             _values[0] = minValue;
 
             for (uint i = 1; i < _lenght; i++)
@@ -31,11 +33,12 @@ namespace Task7
         public override string ToString()
         {
             return String.Join(", ", _values);
-        } 
+        }
 
         public void Print()
         {
             Console.WriteLine(ToString());
         }
+
     }
 }

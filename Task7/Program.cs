@@ -2,14 +2,15 @@
 
 namespace Task7
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            uint n = 0xffffff;
-            uint m = 122;
+            uint lenghtOfSequence = 3;      //TODO input
+            uint raisedNumber = 122;
 
-            Sequence sequence = new Sequence(n, m);
+            Sequence sequence = new Sequence(lenghtOfSequence, raisedNumber);
+            sequence.BuildSequence();
             sequence.Print();
         }
     }

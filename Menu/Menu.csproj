@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Task4\Task4.csproj" />
+    <ProjectReference Include="..\Task7\Task7.csproj" />
+  </ItemGroup>
+
+</Project>
